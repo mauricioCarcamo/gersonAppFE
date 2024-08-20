@@ -4,6 +4,7 @@ import './postForm.css';
 import { savePhoto, savePost } from '../../FackApis/Forms';
 
 const PostForm = () => {
+  const user = JSON.parse(localStorage.getItem('auth'));
   const [formData, setFormData] = useState({
     image: null,
     imageUrl: '',
@@ -43,7 +44,7 @@ const PostForm = () => {
     try {
       // Enviar los datos del formulario a savePost
       const postResponse = await savePost({
-        author: formData.name,
+        author: user._id,
         body: formData.description,
         image: 'photo',
         dateMs: 1,
@@ -67,7 +68,6 @@ const PostForm = () => {
       try {
         const response = await fetch("http://localhost:3000/post");
         const data = await response.json();
-        console.log(data);
       } catch (error) {
         console.error("Error fetching posts:", error);
       }

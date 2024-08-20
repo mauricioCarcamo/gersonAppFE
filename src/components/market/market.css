@@ -28,6 +28,7 @@
     align-items: center;
     width: 100%;
     margin-top: 1rem;
+    gap: 1rem;
     > button{
         padding: 0.5rem 1rem;
         border: none;
@@ -58,6 +59,15 @@
     width: 100%;
     margin-top: 1rem;
 }
-
+ span a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        color: #0056b3;
+    }
+ }
 
 /* #endRegion */

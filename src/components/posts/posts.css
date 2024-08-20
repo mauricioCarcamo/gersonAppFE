@@ -15,7 +15,7 @@
   width: 100%;
   display: flex;
   gap: 1rem;
-  @media (max-width: 1000px){
+  @media (max-width: 1400px){
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -67,7 +67,6 @@
 .post-actions {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -101,5 +100,66 @@
     cursor: pointer;
     &.liked{
         color: #ea3333;
+        > p {
+            color: #ea3333;
+        }
+    }
+}
+
+.post-comments{
+  place-items: flex-end;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.3rem;
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+.comments-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 100%;
+    background-color: #cccccc89;
+    border-radius: 5px;
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  > p {
+    margin: auto;
+    color: #708293;
+    font-weight: bold;
+  }
+}
+.comment {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #cccccc;
+    background-color: #fff;
+    border-radius: 5px;
+    border-radius: 10px;
+    width: 100%;
+    color: #000 !important;
+    max-height: max-content;
+}
+
+.reactions-comments{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border-top: 1px solid #ccc;   
+    margin-top: 20px;
+    padding: 5px 0px;
+    font-size: 0.85rem;
+    color: #6C63FF !important;
+    > p{
+      color: #6C63FF !important;
+
     }
 }

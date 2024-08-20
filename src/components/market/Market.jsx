@@ -7,7 +7,8 @@ const Market = () => {
         <div className="header">
             <h1>POSTS</h1>
             <div className="actions">
-                <button> <Link to={'./post'}>Add Post</Link> </button>
+                <span><Link to={'/'}> Inicio </Link></span>
+                <button> <Link to={'./post'}>Crear Publicación</Link> </button>
             </div>
             <div className="marketContent">
                 <Outlet/>
