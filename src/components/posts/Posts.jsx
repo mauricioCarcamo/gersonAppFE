@@ -49,6 +49,7 @@ const Posts = () => {
       .then((response) => response.json())
       window.location.reload();
   }
+
   const hasUserLiked = (post) => {
     const isLiked = post.find(post => post.author === user);
     return isLiked
@@ -68,8 +69,7 @@ useEffect(() => {
               }
             return newPost;
             
-          })
-          
+          })  
         );
         (updatedPosts);
 

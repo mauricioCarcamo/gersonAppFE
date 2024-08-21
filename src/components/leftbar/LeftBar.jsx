@@ -37,7 +37,7 @@ export default function LeftBar() {
             <h4>Groups</h4>
           </div>
           </Link>
-          <Link to='/market'>
+          <Link to='/'>
           <div className="item">
             <img src={Market} alt="" />
             <h4>Market</h4>
